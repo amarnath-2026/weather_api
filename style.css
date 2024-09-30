@@ -1,0 +1,134 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://images.pexels.com/photos/21492/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+}
+
+#weather-container {
+    background: rgba(255, 255, 255, 0.3);
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+h2, label, p {
+    color: black;
+    margin: 6px 0;
+}
+
+input {
+    width: calc(100% - 10px);
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid white;
+    margin-top: 15px;
+}
+
+button {
+    background: #debff4;
+    color: rgb(10, 1, 1);
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 80px;
+    font-size: 13px;
+}
+
+button:hover {
+    background: #8b48d7;
+}
+
+#temp-div p {
+    font-size: 45px;
+    margin-top: -25px;
+}
+
+#weather-info {
+    font-size: 16px;
+}
+
+#weather-icon {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 8px;
+    display: none;
+}
+
+#humidity-div, #wind-div {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#hourly-forecast {
+    margin-top: 15px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 6px;
+    color: white;
+}
+
+.hourly-item img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 4px;
+}
+
+#hourly-heading {
+    color: #fff;
+    margin-top: 8px;
+}
+
+#weather-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+#humidity-div, #wind-div {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 8px;
+    margin-bottom: 12px;
+    justify-content: center;
+}
+
+#humidity-div img, #wind-div img {
+    width: 30px;
+    height: 30px;
+}
+
+#humidity, #wind-speed {
+    font-size: 16px;
+}
